@@ -1,0 +1,13 @@
+database:
+  user: docker
+  password: docker
+  net: tcp
+  addr: 127.0.0.1:13306
+  dbname: clean-architecture-go
+  allowNativePasswords: true
+  parseTime: true
+  params:
+    charset: "utf8mb4"
+
+server:
+  address: 8080
