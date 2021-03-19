@@ -24,3 +24,11 @@ Then, run migration command.
 $ make migration_up
 ```
 
+## Set up database.
+
+```
+$ docker-compose up -d mysql
+$ docker-compose exec mysql bash
+$ mysql -uroot -p
+CREATE DATABASE IF NOT EXISTS `clean-architecture-go` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
